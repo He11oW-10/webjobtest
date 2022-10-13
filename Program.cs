@@ -11,7 +11,7 @@ namespace webjobcon
         static void Main(string[] args)
         {
             TelemetryConfiguration configuration = TelemetryConfiguration.CreateDefault();
-            configuration.ConnectionString ="InstrumentationKey=9bf0e014-3d3b-4b75-9833-45f4d8c0870d;IngestionEndpoint=https://centralus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://centralus.livediagnostics.monitor.azure.com/";
+            configuration.ConnectionString ="";
             TelemetryClient client = new TelemetryClient(configuration);
             client.TrackTrace("This is from webjob.");
             for (int i = 0; i < 10; i++)
